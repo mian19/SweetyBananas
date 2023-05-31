@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670801872A1E9B0E00AC626F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670801862A1E9B0E00AC626F /* AppDelegate.swift */; };
+		670801902A1E9B1000AC626F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6708018F2A1E9B1000AC626F /* Assets.xcassets */; };
+		670801932A1E9B1000AC626F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670801912A1E9B1000AC626F /* LaunchScreen.storyboard */; };
+		671C5C182A200A870052365C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C172A200A870052365C /* MainViewController.swift */; };
+		671C5C1A2A200ABE0052365C /* MemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C192A200ABE0052365C /* MemoryManager.swift */; };
+		671C5C1C2A200ECB0052365C /* back.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 671C5C1B2A200ECA0052365C /* back.mp3 */; };
+		671C5C1E2A200F080052365C /* tap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 671C5C1D2A200F080052365C /* tap.wav */; };
+		671C5C222A2012B70052365C /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 671C5C212A2012B70052365C /* Baloo-Regular.ttf */; };
+		671C5C242A2017510052365C /* ConfigsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C232A2017510052365C /* ConfigsViewController.swift */; };
+		671C5C262A2017E30052365C /* Double+adjWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C252A2017E30052365C /* Double+adjWidth.swift */; };
+		671C5C282A201D0C0052365C /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C272A201D0C0052365C /* RulesViewController.swift */; };
+		671C5C2A2A201D160052365C /* OpendLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C292A201D160052365C /* OpendLevels.swift */; };
+		671C5C2C2A201D210052365C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C2B2A201D210052365C /* GameViewController.swift */; };
+		671C5C2E2A201D2A0052365C /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C5C2D2A201D2A0052365C /* RecordsViewController.swift */; };
+		676E93E02A268A9E00C7A86C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676E93DF2A268A9E00C7A86C /* GoogleService-Info.plist */; };
+		676E93E22A26904B00C7A86C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676E93E12A26904B00C7A86C /* NetworkService.swift */; };
+		676E93E42A2690E800C7A86C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676E93E32A2690E800C7A86C /* WebViewController.swift */; };
+		67824A6E2A27F2E00038AD9F /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 67824A6D2A27F2E00038AD9F /* FacebookBasics */; };
+		67824A702A27F2E00038AD9F /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 67824A6F2A27F2E00038AD9F /* FacebookCore */; };
+		6782A6842A23E6A500CDDDD6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A6832A23E6A500CDDDD6 /* FirebaseAnalytics */; };
+		6782A6862A23E6A500CDDDD6 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A6852A23E6A500CDDDD6 /* FirebaseCrashlytics */; };
+		6782A6882A23E6A500CDDDD6 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A6872A23E6A500CDDDD6 /* FirebaseMessaging */; };
+		6782A68A2A23E6A500CDDDD6 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A6892A23E6A500CDDDD6 /* FirebaseRemoteConfig */; };
+		6782A68D2A23EA4000CDDDD6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A68C2A23EA4000CDDDD6 /* OneSignal */; };
+		6782A68F2A23EA4000CDDDD6 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A68E2A23EA4000CDDDD6 /* OneSignalExtension */; };
+		6782A6972A23EB3000CDDDD6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782A6962A23EB3000CDDDD6 /* NotificationService.swift */; };
+		6782A69B2A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6782A6942A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6782A6A32A23F13100CDDDD6 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 6782A6A22A23F13100CDDDD6 /* AppsFlyerLib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6782A6992A23EB3000CDDDD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6708017B2A1E9B0E00AC626F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6782A6932A23EB3000CDDDD6;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6782A69F2A23EB3000CDDDD6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6782A69B2A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		670801832A1E9B0E00AC626F /* SweetyBananas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetyBananas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		670801862A1E9B0E00AC626F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6708018F2A1E9B1000AC626F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		670801922A1E9B1000AC626F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		670801942A1E9B1000AC626F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		671C5C172A200A870052365C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		671C5C192A200ABE0052365C /* MemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryManager.swift; sourceTree = "<group>"; };
+		671C5C1B2A200ECA0052365C /* back.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back.mp3; sourceTree = "<group>"; };
+		671C5C1D2A200F080052365C /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		671C5C212A2012B70052365C /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
+		671C5C232A2017510052365C /* ConfigsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigsViewController.swift; sourceTree = "<group>"; };
+		671C5C252A2017E30052365C /* Double+adjWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+adjWidth.swift"; sourceTree = "<group>"; };
+		671C5C272A201D0C0052365C /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		671C5C292A201D160052365C /* OpendLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpendLevels.swift; sourceTree = "<group>"; };
+		671C5C2B2A201D210052365C /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		671C5C2D2A201D2A0052365C /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		676E93DF2A268A9E00C7A86C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		676E93E12A26904B00C7A86C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		676E93E32A2690E800C7A86C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		67824A712A27F2FD0038AD9F /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		6782A6942A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6782A6962A23EB3000CDDDD6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		6782A6982A23EB3000CDDDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6782A6A02A23EC1F00CDDDD6 /* SweetyBananas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SweetyBananas.entitlements; sourceTree = "<group>"; };
+		67BC692D2A27E03A00DE178F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		670801802A1E9B0E00AC626F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6782A6A32A23F13100CDDDD6 /* AppsFlyerLib in Frameworks */,
+				6782A68D2A23EA4000CDDDD6 /* OneSignal in Frameworks */,
+				6782A68F2A23EA4000CDDDD6 /* OneSignalExtension in Frameworks */,
+				6782A6882A23E6A500CDDDD6 /* FirebaseMessaging in Frameworks */,
+				6782A6842A23E6A500CDDDD6 /* FirebaseAnalytics in Frameworks */,
+				67824A6E2A27F2E00038AD9F /* FacebookBasics in Frameworks */,
+				6782A6862A23E6A500CDDDD6 /* FirebaseCrashlytics in Frameworks */,
+				67824A702A27F2E00038AD9F /* FacebookCore in Frameworks */,
+				6782A68A2A23E6A500CDDDD6 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6782A6912A23EB3000CDDDD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6708017A2A1E9B0E00AC626F = {
+			isa = PBXGroup;
+			children = (
+				670801852A1E9B0E00AC626F /* SweetyBananas */,
+				6782A6952A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension */,
+				670801842A1E9B0E00AC626F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		670801842A1E9B0E00AC626F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				670801832A1E9B0E00AC626F /* SweetyBananas.app */,
+				6782A6942A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		670801852A1E9B0E00AC626F /* SweetyBananas */ = {
+			isa = PBXGroup;
+			children = (
+				6782A6A02A23EC1F00CDDDD6 /* SweetyBananas.entitlements */,
+				670801862A1E9B0E00AC626F /* AppDelegate.swift */,
+				671C5C172A200A870052365C /* MainViewController.swift */,
+				671C5C192A200ABE0052365C /* MemoryManager.swift */,
+				671C5C252A2017E30052365C /* Double+adjWidth.swift */,
+				671C5C292A201D160052365C /* OpendLevels.swift */,
+				671C5C272A201D0C0052365C /* RulesViewController.swift */,
+				671C5C2D2A201D2A0052365C /* RecordsViewController.swift */,
+				671C5C2B2A201D210052365C /* GameViewController.swift */,
+				671C5C232A2017510052365C /* ConfigsViewController.swift */,
+				676E93E32A2690E800C7A86C /* WebViewController.swift */,
+				676E93E12A26904B00C7A86C /* NetworkService.swift */,
+				671C5C1B2A200ECA0052365C /* back.mp3 */,
+				671C5C1D2A200F080052365C /* tap.wav */,
+				6708018F2A1E9B1000AC626F /* Assets.xcassets */,
+				670801912A1E9B1000AC626F /* LaunchScreen.storyboard */,
+				671C5C212A2012B70052365C /* Baloo-Regular.ttf */,
+				676E93DF2A268A9E00C7A86C /* GoogleService-Info.plist */,
+				670801942A1E9B1000AC626F /* Info.plist */,
+			);
+			path = SweetyBananas;
+			sourceTree = "<group>";
+		};
+		6782A6952A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				67824A712A27F2FD0038AD9F /* OneSignalNotificationServiceExtension.entitlements */,
+				6782A6962A23EB3000CDDDD6 /* NotificationService.swift */,
+				6782A6982A23EB3000CDDDD6 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		670801822A1E9B0E00AC626F /* SweetyBananas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 670801972A1E9B1000AC626F /* Build configuration list for PBXNativeTarget "SweetyBananas" */;
+			buildPhases = (
+				6708017F2A1E9B0E00AC626F /* Sources */,
+				670801802A1E9B0E00AC626F /* Frameworks */,
+				670801812A1E9B0E00AC626F /* Resources */,
+				6782A69F2A23EB3000CDDDD6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6782A69A2A23EB3000CDDDD6 /* PBXTargetDependency */,
+			);
+			name = SweetyBananas;
+			packageProductDependencies = (
+				6782A6832A23E6A500CDDDD6 /* FirebaseAnalytics */,
+				6782A6852A23E6A500CDDDD6 /* FirebaseCrashlytics */,
+				6782A6872A23E6A500CDDDD6 /* FirebaseMessaging */,
+				6782A6892A23E6A500CDDDD6 /* FirebaseRemoteConfig */,
+				6782A68C2A23EA4000CDDDD6 /* OneSignal */,
+				6782A68E2A23EA4000CDDDD6 /* OneSignalExtension */,
+				6782A6A22A23F13100CDDDD6 /* AppsFlyerLib */,
+				67824A6D2A27F2E00038AD9F /* FacebookBasics */,
+				67824A6F2A27F2E00038AD9F /* FacebookCore */,
+			);
+			productName = SweetyBananas;
+			productReference = 670801832A1E9B0E00AC626F /* SweetyBananas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6782A6932A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6782A69C2A23EB3000CDDDD6 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				6782A6902A23EB3000CDDDD6 /* Sources */,
+				6782A6912A23EB3000CDDDD6 /* Frameworks */,
+				6782A6922A23EB3000CDDDD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 6782A6942A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6708017B2A1E9B0E00AC626F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					670801822A1E9B0E00AC626F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					6782A6932A23EB3000CDDDD6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 6708017E2A1E9B0E00AC626F /* Build configuration list for PBXProject "SweetyBananas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 6708017A2A1E9B0E00AC626F;
+			packageReferences = (
+				6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6782A68B2A23EA4000CDDDD6 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
+				6782A6A12A23F13100CDDDD6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				67824A6C2A27F2E00038AD9F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = 670801842A1E9B0E00AC626F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				670801822A1E9B0E00AC626F /* SweetyBananas */,
+				6782A6932A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		670801812A1E9B0E00AC626F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671C5C222A2012B70052365C /* Baloo-Regular.ttf in Resources */,
+				671C5C1E2A200F080052365C /* tap.wav in Resources */,
+				670801932A1E9B1000AC626F /* LaunchScreen.storyboard in Resources */,
+				670801902A1E9B1000AC626F /* Assets.xcassets in Resources */,
+				671C5C1C2A200ECB0052365C /* back.mp3 in Resources */,
+				676E93E02A268A9E00C7A86C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6782A6922A23EB3000CDDDD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6708017F2A1E9B0E00AC626F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676E93E22A26904B00C7A86C /* NetworkService.swift in Sources */,
+				676E93E42A2690E800C7A86C /* WebViewController.swift in Sources */,
+				671C5C2E2A201D2A0052365C /* RecordsViewController.swift in Sources */,
+				671C5C2C2A201D210052365C /* GameViewController.swift in Sources */,
+				670801872A1E9B0E00AC626F /* AppDelegate.swift in Sources */,
+				671C5C182A200A870052365C /* MainViewController.swift in Sources */,
+				671C5C282A201D0C0052365C /* RulesViewController.swift in Sources */,
+				671C5C2A2A201D160052365C /* OpendLevels.swift in Sources */,
+				671C5C262A2017E30052365C /* Double+adjWidth.swift in Sources */,
+				671C5C1A2A200ABE0052365C /* MemoryManager.swift in Sources */,
+				671C5C242A2017510052365C /* ConfigsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6782A6902A23EB3000CDDDD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6782A6972A23EB3000CDDDD6 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6782A69A2A23EB3000CDDDD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6782A6932A23EB3000CDDDD6 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 6782A6992A23EB3000CDDDD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		670801912A1E9B1000AC626F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				670801922A1E9B1000AC626F /* Base */,
+				67BC692D2A27E03A00DE178F /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		670801952A1E9B1000AC626F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		670801962A1E9B1000AC626F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		670801982A1E9B1000AC626F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SweetyBananas/SweetyBananas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SweetyBananas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.banan.app.co;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		670801992A1E9B1000AC626F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SweetyBananas/SweetyBananas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SweetyBananas/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.banan.app.co;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6782A69D2A23EB3000CDDDD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.banan.app.co.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6782A69E2A23EB3000CDDDD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sweet.banan.app.co.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6708017E2A1E9B0E00AC626F /* Build configuration list for PBXProject "SweetyBananas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670801952A1E9B1000AC626F /* Debug */,
+				670801962A1E9B1000AC626F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		670801972A1E9B1000AC626F /* Build configuration list for PBXNativeTarget "SweetyBananas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				670801982A1E9B1000AC626F /* Debug */,
+				670801992A1E9B1000AC626F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6782A69C2A23EB3000CDDDD6 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6782A69D2A23EB3000CDDDD6 /* Debug */,
+				6782A69E2A23EB3000CDDDD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67824A6C2A27F2E00038AD9F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		6782A68B2A23EA4000CDDDD6 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		6782A6A12A23F13100CDDDD6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67824A6D2A27F2E00038AD9F /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67824A6C2A27F2E00038AD9F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		67824A6F2A27F2E00038AD9F /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67824A6C2A27F2E00038AD9F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		6782A6832A23E6A500CDDDD6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6782A6852A23E6A500CDDDD6 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6782A6872A23E6A500CDDDD6 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6782A6892A23E6A500CDDDD6 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A6822A23E6A500CDDDD6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		6782A68C2A23EA4000CDDDD6 /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A68B2A23EA4000CDDDD6 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		6782A68E2A23EA4000CDDDD6 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A68B2A23EA4000CDDDD6 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		6782A6A22A23F13100CDDDD6 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6782A6A12A23F13100CDDDD6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6708017B2A1E9B0E00AC626F /* Project object */;
+}
